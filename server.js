@@ -18,6 +18,7 @@ app.get("/api/categories", (req, res) => {
     { id: 2, name: "Shoes", price: 1200 },
     { id: 1, name: "Sandals", price: 500 },
     { id: 2, name: "Sarees", price: 1200 },
+    { id: 2, name: "Serwanis (our best product)", price: 3000 },
   ]);
 });
 
