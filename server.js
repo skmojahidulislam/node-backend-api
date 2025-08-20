@@ -14,7 +14,7 @@ app.get("/api/health", (req, res) => {
 // Example products API
 app.get("/api/categories", (req, res) => {
   res.json([
-    { id: 1, name: "Shirt", price: 500 },
+    { id: 1, name: "Shirts", price: 500 },
     { id: 2, name: "Shoes", price: 1200 },
     { id: 1, name: "Sandals", price: 500 },
     { id: 2, name: "Sarees", price: 1200 },
