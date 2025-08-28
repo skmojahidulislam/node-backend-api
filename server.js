@@ -32,7 +32,8 @@ app.get("/api/health", (req, res) => {
 app.get("/api/categories", (req, res) => {
   db.query("SELECT * FROM categories", (err, results) => {
     if (err) {
-      res.status(500).json({ error: "Database error" });
+      console.error("❌ Query error:", err); // Yeh add kar
+      res.status(500).json({ error: err.message }); // Actual error bhej
     } else {
       res.json(results);
     }
